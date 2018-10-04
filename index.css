@@ -1,0 +1,60 @@
+
+body {
+  background-color: lightgrey;
+}
+.top {
+  border-bottom: 1px solid black;
+  display: flex;
+  background-color: #ADAD85;
+}
+
+.bottom {
+  border-top: 1px solid black;
+  display: flex;
+  background-color: #ADAD85;
+}
+
+.track-bin {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  color: purple;
+  font-weight: 100px;
+}
+
+.container-left {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 350px;
+}
+.container-right{
+  width: 50%;
+  background-image: url("resources/fadedTrack.jpg");
+  height: 900px;
+  display: inline-block;
+}
+.container-text {
+  text-align: center;
+
+}
+
+.choose-tracks {
+  background-color: darkgrey;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.train-tracks {
+  width: 500px;
+  height: 600px;
+  margin-left: 740px;
+}
+
+img {
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 40%;
+}
