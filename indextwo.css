@@ -15,21 +15,22 @@
   padding-top: 55px;
 }
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+.albums {
+  display: flex;
+  margin-left: 50px;
 }
-  .card {
-    display: inline-block;
-  }
 
+img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: 20px;
+}
 
-.body-text {
+.body-container {
   background-color: whitesmoke;
   border: 2px solid black;
   height: 200px;
-  margin: 200px 80px 0px 80px;
+  margin: 100px 80px 0px 80px;
 }
 
 .body-buttons {
