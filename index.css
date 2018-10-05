@@ -6,12 +6,14 @@ body {
   border-bottom: 1px solid black;
   display: flex;
   background-color: #ADAD85;
+  margin-top: 0;
 }
 
 .bottom {
   border-top: 1px solid black;
   display: flex;
   background-color: #ADAD85;
+  height: 40px;
 }
 
 .track-bin {
@@ -39,7 +41,8 @@ body {
 }
 
 .choose-tracks {
-  background-color: darkgrey;
+  color: white;
+  background-color: black;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   border-radius: 10px;
@@ -57,4 +60,9 @@ img {
   width: 250px;
   margin-top: 30px;
   margin-left: 40%;
+}
+.footer-text{
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-left: 45px;
 }

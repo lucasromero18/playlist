@@ -1,14 +1,25 @@
-axios.get(" https://lit-fortress-6467.herokuapp.com/object")
+axios.get("https://lit-fortress-6467.herokuapp.com/object")
 .then((res) => {
-  console.log(res)
     const imageContainer = document.querySelector(".container-right")
-    let albumCoverone = document.createElement("img")
-    albumCoverone.src = "images/21.jpg"
-    imageContainer.appendChild(albumCoverone)
+    let albumCoverOne = document.createElement("img")
+    albumCoverOne.src = ("images/") + res.data.results[ Math.floor(Math.random() * (4 - 0 + 1)) + 0].cover_art
+    console.log(res.data.results)
+    imageContainer.appendChild(albumCoverOne)
     let albumCoverTwo = document.createElement("img")
-    albumCoverTwo.src = "images/thriller.jpg"
+    albumCoverTwo.src = ("images/") + res.data.results[ Math.floor(Math.random() * (4 - 0 + 1)) + 0].cover_art
     imageContainer.appendChild(albumCoverTwo)
     let albumCoverThree = document.createElement("img")
-    albumCoverThree.src = "images/red.jpg"
+    albumCoverThree.src = ("images/") + res.data.results[ Math.floor(Math.random() * (4 - 0 + 1)) + 0].cover_art
     imageContainer.appendChild(albumCoverThree)
+
+
+})
+
+axios.get("https://lit-fortress-6467.herokuapp.com/object")
+.then((res) => {
+  let chooseButton = document.querySelector(".choose-tracks")
+  chooseButton.addEventListener("click", function(e){
+
+  })
+
 })
