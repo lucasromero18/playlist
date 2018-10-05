@@ -22,11 +22,43 @@ axios.get("https://lit-fortress-6467.herokuapp.com/object")
    fifthAlbumCover.src = ("images/") + res.data.results[4].cover_art
    imageContainerFive.appendChild(fifthAlbumCover)
 
-   let allAlbums = document.querySelector(".albums")
-   allAlbums.addEventListener("click", (e) => {
+   let thePolice = document.querySelector(".album-container")
+   thePolice.addEventListener("click", (e) => {
     let middleContainer = document.querySelector(".body-container")
-    let artistNames = document.createElement("p")
-    artistNames.innerHTML = res.data.results[0].artist
-    middleContainer.appendChild(artistNames)
-   })
+    let policeName = document.createElement("p")
+    policeName.innerHTML = res.data.results[0].artist
+    middleContainer.appendChild(policeName)
+
+    let blackUhuru = document.querySelector(".album-container-two")
+    blackUhuru.addEventListener("click", (e) => {
+     let middleContainer = document.querySelector(".body-container")
+     let uhuruName = document.createElement("p")
+     uhuruName.innerHTML = res.data.results[1].artist
+     middleContainer.appendChild(uhuruName)
+
+    let divisionFaces = document.querySelector(".album-container-three")
+    divisionFaces.addEventListener("click", (e) => {
+    let middleContainer = document.querySelector(".body-container")
+    let splitFace = document.createElement("p")
+    splitFace.innerHTML = res.data.results[2].artist
+    middleContainer.appendChild(splitFace)
+
+    let michaelJackson = document.querySelector(".album-container-four")
+    michaelJackson.addEventListener("click", (e) => {
+    let middleContainer = document.querySelector(".body-container")
+    let thriller = document.createElement("p")
+    thriller.innerHTML = res.data.results[3].artist
+    middleContainer.appendChild(thriller)
+
+    let adele = document.querySelector(".album-container-five")
+    adele.addEventListener("click", (e) => {
+    let middleContainer = document.querySelector(".body-container")
+    let someoneLikeYou = document.createElement("p")
+    someoneLikeYou.innerHTML = res.data.results[4].artist
+    middleContainer.appendChild(someoneLikeYou)
+          })
+        })
+      })
+    })
+  })
 })
